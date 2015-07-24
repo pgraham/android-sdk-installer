@@ -62,7 +62,7 @@ mkdir -p $INSTALLER_DIR
 mkdir -p $TOOLS_DIR
 
 echo "Downloading SDK"
-wget -c -O $INSTALLER_DIR/$SDK_FILE $SDK_URL
+curl -L -o $INSTALLER_DIR/$SDK_FILE $SDK_URL
 echo "Extracting SDK"
 
 if [[ $os == 'linux' ]]; then
